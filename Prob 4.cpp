@@ -5,9 +5,10 @@ using namespace std;
 int main() {
     int r,s=0;
     long int num,max=0,i;
-    for(i=10000;i<=998001;++i)
-    {
-        
+    for(i=100;i<=999;++i)
+    { 
+       for(i=100;i<=999;++i)
+        {
         
             s=0;
             num=i;
