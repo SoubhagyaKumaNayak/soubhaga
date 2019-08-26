@@ -3,12 +3,12 @@
 using namespace std;
 
 int main() {
-    int a,b,c;
-    for(a=1;a<=1000;++a)
+   int a,b,c,sum=1000;
+   for(a=1;a<=1000;++a)
     {
         for(b=a+1;b<=1000;++b)
         {
-            for(c=a+1;c<=1000;++c)
+            c=sum-a-b;
             {
                 if((a*a+b*b==c*c)&&(a+b+c==1000))
                 {
@@ -17,6 +17,26 @@ int main() {
             }
         }
     }
-    return 0;
+    return 0; 
+}
+
+
+
+
     
-} 
+  
+   
+  
+        
+         
+           
+  
+                
+                    
+                
+            
+        
+    
+
+    
+
