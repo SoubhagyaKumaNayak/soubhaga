@@ -1,31 +1,65 @@
 #include <iostream>
-#include<cmath>
+
 
 using namespace std;
+long  prime(int n)
+{ 
+int m=n/2;
+    for (int i = 2; i <=m ; ++i)
+    {
+        if (n % i == 0)
+        {
+            return 0;
+        }
+    }
+    return 1;
+}
 
-int main() {
-    int c=0,i,j=2,prime=0;
-                      while(prime<10001)
-                      {
-                              for(i=1;i<=sqrt(j);i++)
-                              {
-                                       if(j%i==0)
-                                       {
-                                         c++;
-                                       }
-                                       if(c>1)
-                                       {
-                                         break;
-                                       }
-                             }
-                             if(c==1)
+int main()
+{
+    int c= 2;
+    for (int i =3; i = i+2;)
+    {
+        if (prime(i))
+        {
+            c++;
+        }
+        if (c== 10001)
+        {
+            cout << i;
+            return 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+  
+                    
+                      
+                              
+                              
+                                   
+                                       
+                                   
+                                     
+                                   
+                                       
+                                    
+                                       
                              
-                             prime++;
-                             j++;
-                             c=0;
                              
-                       }
-                       cout<<j-1;
-                       return 0; 
-               }
+                             
+                          
+                          
+                          
+                            
+                       
+                       
+                     
+               
 
