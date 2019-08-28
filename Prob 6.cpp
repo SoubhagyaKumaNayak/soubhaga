@@ -1,30 +1,65 @@
 #include <iostream>
-#include<cmath>
-using namespace std;
-int sums(int n);
-int square(int n);
 
-int main() 
-{
-    cout<<square(100)-sums(100);
-}
+using namespace std;
+
+   int Diff(int m)
+   { 
+
+  int a,b,j; 
+
+
+    a= (m * (m + 1) * (2 * m + 1)) / 6; 
+
+      b = (m * (m + 1)) / 2; 
+
+       b= b* b; 
+
+        j= (b-a); 
+
+      
+
+    return j; 
+
+  
+} 
+
+  int main() 
+{ 
+
+    int n = 100; 
+
+    cout << Diff(n); 
+
+    return 0; 
+
+      
+} 
+
+
+
+
+
+
+
+  
+
     
-int sums(int n)
-    {
-        int sum=0,i;
-        for(i=1;i<=100;++i)
-        {
-            sum+=pow(i,2);
-        }
-        return sum;
-    }
-    int square(int n)
-         {
-             int sum=0,squ=0,j;
-             for(j=1;j<=100;++j)
-             {
-                 sum+=j;
-             }
-             squ=pow(sum,2);
-             return squ; 
-}
+
+    
+      
+     
+        
+           
+        
+       
+    
+  
+         
+          
+            
+             
+              
+             
+          
+           
+
