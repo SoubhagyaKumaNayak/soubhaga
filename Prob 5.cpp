@@ -1,26 +1,73 @@
-#include <iostream>
+#include<iostream>
 
 using namespace std;
 
-int main() {
-       int i;
-       int n=2520;
-       i=11;
-       while(i<=20)
-      {
-       for(i=11;i<=20;i++)
-       {
-           if(n%i!=0)
-           {
-               n+=1;
-               break;
-           }
-       }
-      }
-       cout<<n;
-       return 0;
+long  gcd(long,long);
+
+long LCM(long a,long b)
+{
+
+         int LCM;
+         LCM=(a*b)/gcd(a,b);
+
+         return LCM;
+}
+
+long gcd(long a,long b)
+{
+
+         while(a!=b)
+         {
+            if(a>b)
+            {    
+                a=a-b;    
+                }
+            else
+            {
+                b=b-a;
+                
+            } 
+             
+         }
+        return a;
+        }
+
+
+int main()
+{
+int j=1;
+
+for(int i=11;i<=20;i++)
+{
+        j=LCM(j,i);
+}
+
+cout<<j;
+
+return 0;
+}
+
+
+
+
+     
+     
+     
        
-} 
+      
+      
+       
+         
+           
+             
+              
+           
+       
+      
+      
+     
+      
+
 
 
 
