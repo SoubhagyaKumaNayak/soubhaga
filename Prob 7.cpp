@@ -1,7 +1,7 @@
 #include<iostream>
 #include<math.h>
-
 using namespace std;
+
 
 long check(long j)
 {
