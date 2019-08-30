@@ -1,19 +1,15 @@
+
 #include<iostream>
 #include<math.h>
+
 using namespace std;
 
-
 long check(long j)
-{
-
-    if(j<= 0 || j== 1 || (j % 2 == 0 && j!= 2))
-    {
-        return false;    
-    }
-
-        for(int i=3;i<=sqrt(j);i+=2)
-        {
-                if(j%i==0)
+{ 
+for(int i=3;i<=sqrt(j);i+=2) 
+{ 
+  
+         if(j%i==0)
                 {
                     return false;
                 }
@@ -29,14 +25,52 @@ int main()
                 {
                     ++a;
                  }
-                ++m;
+                m=m+2;
                    }
                   
-                   cout<<m-1;
+                   cout<<m-2;
                    return 0;
 
 
 }
+
+
+
+
+
+
+
+  
+    
+         
+    
+
+      
+        
+            
+                
+                 
+                
+                   
+      
+
+
+
+    
+           
+            
+            
+                
+              
+                 
+              
+                   
+                  
+                
+                 
+
+
+
 
 
 
