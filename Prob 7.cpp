@@ -1,36 +1,80 @@
-#include <iostream>
-
+#include<iostream>
+#include<cmath>
 
 using namespace std;
-long  prime(int n)
-{ 
-int m=n/2;
-    for (int i = 2; i <=m ; ++i)
-    {
-        if (n % i == 0)
-        {
-            return 0;
-        }
-    }
-    return 1;
-}
 
+
+long prime(long a)
+{
+	if ( a%2==0)
+	{
+	    if(a>2)
+	{
+		return false;
+	}
+	}
+	for(long b=3;b <= (long)sqrt(a); b=b+2) 
+	{
+		if (a % b == 0) 
+		{
+		return false;
+		}
+	}
+	return true;
+}
 int main()
 {
-    int c= 2;
-    for (int i =3; i = i+2;)
-    {
-        if (prime(i))
-        {
-            c++;
-        }
-        if (c== 10001)
-        {
-            cout << i;
-            return 0;
-        }
-    }
+	
+    long i=2,j=0;
+    int c=0;
+    while(true)
+	{
+		if(c==10001)
+		{
+			break;
+		}
+		if (prime(i))
+		{
+			j=i;
+			c++;
+		}
+		i++;
+	}	
+	cout<<j;
+     return 0;
 }
+
+
+
+
+
+
+  
+    
+        
+        
+          
+        
+    
+   
+
+
+
+
+   
+    
+    
+      
+        
+       
+        
+        
+        
+         
+         
+        
+    
+
 
 
 
