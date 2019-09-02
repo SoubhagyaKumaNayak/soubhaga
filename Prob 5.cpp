@@ -7,8 +7,8 @@ long  gcd(long,long);
 long LCM(long a,long b)
 {
 
-         int LCM;
-         LCM=(a*b)/gcd(a,b);
+        long LCM;
+         LCM=a*(b/gcd(a,b));
 
          return LCM;
 }
@@ -16,22 +16,14 @@ long LCM(long a,long b)
 long gcd(long a,long b)
 {
 
-         while(a!=b)
-         {
-            if(a>b)
-            {    
-                a=a-b;    
-                }
-            else
-            {
-                b=b-a;
-                
-            } 
-             
-         }
-        return a;
+        while(a!=0)
+        {
+            long c=a;
+            a=b%c;
+            b=c;
         }
-
+        return b;
+} 
 
 int main()
 {
@@ -46,6 +38,53 @@ cout<<j;
 
 return 0;
 }
+
+
+
+
+
+
+
+
+       
+         
+
+      
+
+
+
+
+
+      
+        
+          
+            
+            
+                
+           
+           
+            
+              
+            
+             
+        
+      
+        
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
 
 
 
